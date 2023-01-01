@@ -1,0 +1,44 @@
+@use '/assets/scss/ress.scss';
+
+@font-face {
+  font-family: 'LINESeedJP';
+  src: url('/assets/font/LINESeedJP_OTF_Rg.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'LINESeedJP';
+  src: url('/assets/font/LINESeedJP_OTF_Bd.otf');
+  font-weight: 700;
+}
+
+:root {
+  --section-margin-inline: 14px;
+  --section-margin-block: 100px;
+  --background-color-margin-block: 60px;
+  --border-radius: 12px;
+  --font-family-ja: 'LINESeedJP', sans-serif;
+  --font-family-en: 'Josefin Sans', sans-serif;
+  --color-black: #222;
+  --color-white: #fff;
+  --color-gray: #fafafa;
+  --color-main: #5180aa;
+  --color-sub: #e8effb;
+  --color-accent: #e27917;
+  --color-accent-hover: #c7600d;
+  @include mixin.mq('tab') {
+    --section-margin-inline: 50px;
+    --section-margin-block: 140px;
+    --background-color-margin-block: 100px;
+  }
+  @include mixin.mq('pc') {
+    --section-width: 1020px;
+    --section-margin-inline: 0;
+    --section-margin-block: 180px;
+  }
+}
+
+body {
+  color: var(--color-black);
+  font-family: var(--font-family-ja);
+}
