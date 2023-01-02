@@ -9,9 +9,9 @@
   <section class="about">
     <div class="about__container">
       <h2 id="about" class="about__heading">
-        <span>一緒に</span>
-        <span>おどりませんか？</span>
-        <span>的な</span>
+        <span>チアと</span>
+        <span>青春と</span>
+        <span>部員募集</span>
       </h2>
       <p class="about__lead">
         Blue Topazは2018年に創部したチアダンス部です。<br /><br />
