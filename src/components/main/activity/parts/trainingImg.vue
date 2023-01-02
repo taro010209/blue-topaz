@@ -5,9 +5,9 @@ import 'swiper/css/effect-fade'
 import 'swiper/css'
 
 const images = [
-  ['./assets/img/training01.webp', '練習するBlue Topaz'],
-  ['./assets/img/training02.webp', '練習するBlue Topaz'],
-  ['./assets/img/training03.webp', '練習するBlue Topaz'],
+  ['./assets/img/training01.webp?v1c', '練習するBlue Topaz'],
+  ['./assets/img/training02.webp?v1c', '練習するBlue Topaz'],
+  ['./assets/img/training03.webp?v1c', '練習するBlue Topaz'],
   // ['./assets/img/training04.webp', '練習するBlue Topaz（クリスマス）'],
 ]
 </script>
