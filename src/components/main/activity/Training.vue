@@ -1,7 +1,7 @@
 <script setup>
-import subHeading from '@/components/main/activity/parts/subHeading.vue';
-import Img from '@/components/main/activity/parts/trainingImg.vue';
-import Summary from '@/components/main/activity/parts/trainingSummary.vue';
+import subHeading from '@/components/main/activity/parts/subHeading.vue'
+import Img from '@/components/main/activity/parts/trainingImg.vue'
+import Summary from '@/components/main/activity/parts/trainingSummary.vue'
 </script>
 
 <template>
@@ -37,7 +37,7 @@ import Summary from '@/components/main/activity/parts/trainingSummary.vue';
     grid-template:
       'heading summary' auto
       'img summary' auto /
-      480px 510px;
+      448px 510px;
     gap: 0 30px;
   }
   @include mixin.mq('pc') {
