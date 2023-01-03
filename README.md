@@ -1,7 +1,6 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+# 一次公開(23/01/03)
+## 改修余地
+- 出場大会にテキスト追加（22年度初なので）
+- アニメーション改善（引き出しが少ない、芋っぽい）
+- コントラスト改善（Lighthouse指摘）
+- アプリ内ブラウザで開いた際のヘッダーの挙動（悪くないけども）
