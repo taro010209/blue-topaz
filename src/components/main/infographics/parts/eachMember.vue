@@ -1,9 +1,9 @@
 <script setup>
-import infographicsEach from '@/components/main/infographics/parts/infographicsEach.vue'
-import generalSVGUse from '@/components/parts/generalSVGUse.vue'
-import observer from '@/components/parts/observer.js'
-import { onMounted } from 'vue'
-import anime from 'animejs'
+import infographicsEach from '@/components/main/infographics/parts/infographicsEach.vue';
+import generalSVGUse from '@/components/parts/generalSVGUse.vue';
+import observer from '@/components/parts/observer.js';
+import { onMounted } from 'vue';
+import anime from 'animejs';
 
 const animeFunc = (entry) => {
   anime
@@ -24,11 +24,11 @@ const animeFunc = (entry) => {
         delay: (el, i) => 70 * (i + 1),
       },
       '-=600'
-    )
-}
+    );
+};
 onMounted(() => {
-  observer.singleObserver(animeFunc, '[data-anime="infographicsMember"]')
-})
+  observer.singleObserver(animeFunc, '[data-anime="infographicsMember"]');
+});
 </script>
 
 <template>
