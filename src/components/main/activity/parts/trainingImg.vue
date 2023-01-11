@@ -1,15 +1,14 @@
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { EffectFade, Autoplay } from 'swiper'
-import 'swiper/css/effect-fade'
-import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { EffectFade, Autoplay } from 'swiper';
+import 'swiper/css/effect-fade';
+import 'swiper/css';
 
 const images = [
   ['./assets/img/training01.webp', '練習するBlue Topaz'],
   ['./assets/img/training02.webp', '練習するBlue Topaz'],
   ['./assets/img/training03.webp', '練習するBlue Topaz'],
-  // ['./assets/img/training04.webp', '練習するBlue Topaz（クリスマス）'],
-]
+];
 </script>
 
 <template>
