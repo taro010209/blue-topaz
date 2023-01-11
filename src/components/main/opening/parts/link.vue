@@ -49,6 +49,7 @@ import generalSVGUse from '@/components/parts/generalSVGUse.vue';
   justify-content: center;
   padding: 30px 20px;
   font-weight: 700;
+  @include mixin.text();
   color: var(--color-white);
   background-color: var(--color-accent);
   transition: background-color 0.4s ease;
