@@ -4,7 +4,9 @@
   <dl class="procedure_wrapper">
     <div class="procedure_wrapper__each">
       <dt class="procedure_wrapper____term"><span class="procedure_wrapper____term_number">1</span><span class="procedure_wrapper____term_text">SNSで体験入部の申し込み</span></dt>
-      <dd class="procedure_wrapper______description">Blue TopazのInstagram、またはTwitterの<strong>ダイレクトメール</strong>で受け付けています！<br />入部希望の旨に<strong>下記項目</strong>を添えてご連絡ください！</dd>
+      <dd class="procedure_wrapper______description">
+        Blue TopazのInstagram、またはTwitterの<strong>ダイレクトメール</strong>で受け付けています！<br />入部希望の旨に<strong>下記項目</strong>を添えてご連絡ください！
+      </dd>
       <dd class="procedure_wrapper______description--item">
         <span>
           ・学部、学科、コース<br />
@@ -87,9 +89,8 @@
   color: var(--color-white);
   background-color: var(--color-main);
   @include mixin.mq('tab') {
-    width: fit-content;
-    margin: 10px 0 0 64px;
-    padding: 20px 242px;
+    width: 100%;
+    padding: 20px 0px;
   }
 }
 </style>
