@@ -5,14 +5,14 @@ import generalSVGUse from '@/components/parts/generalSVGUse.vue';
 <template>
   <div class="link_wrapper">
     <div class="link_wrapper__each">
-      <a href="https://www.instagram.com/thu_blue_topaz/" target="”_blank”" class="link_wrapper__anchor">
+      <a href="https://www.instagram.com/thu_blue_topaz/" target="_blank" class="link_wrapper__anchor">
         Instagramから入部の申請をする！
         <generalSVGUse svgHref="./assets/img/icon_external_link.svg#icon_external_link" />
       </a>
       <p class="link_wrapper__note">Blue TopazのInstagramに移動します</p>
     </div>
     <div class="link_wrapper__each">
-      <a href="https://twitter.com/thu_blue_topaz/" target="”_blank”" class="link_wrapper__anchor">
+      <a href="https://twitter.com/thu_blue_topaz/" target="_blank" class="link_wrapper__anchor">
         Twitterから入部の申請をする！
         <generalSVGUse svgHref="./assets/img/icon_external_link.svg#icon_external_link" />
       </a>
