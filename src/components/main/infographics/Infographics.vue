@@ -59,7 +59,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .infographics {
   padding: var(--background-color-margin-block) 0;
-  background-color: var(--color-main);
+  background-color: #5180aa;
 }
 .infographics__container {
   margin: 0 var(--section-margin-inline);
