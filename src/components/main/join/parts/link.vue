@@ -5,14 +5,14 @@ import generalSVGUse from '@/components/parts/generalSVGUse.vue';
 <template>
   <div class="link_wrapper">
     <div class="link_wrapper__each">
-      <a href="https://www.instagram.com/thu_blue_topaz/" target="”_blank”" class="link_wrapper__anchor">
+      <a href="https://www.instagram.com/thu_blue_topaz/" target="_blank" class="link_wrapper__anchor">
         Instagramから入部の申請をする！
         <generalSVGUse svgHref="./assets/img/icon_external_link.svg#icon_external_link" />
       </a>
       <p class="link_wrapper__note">Blue TopazのInstagramに移動します</p>
     </div>
     <div class="link_wrapper__each">
-      <a href="https://twitter.com/thu_blue_topaz/" target="”_blank”" class="link_wrapper__anchor">
+      <a href="https://twitter.com/thu_blue_topaz/" target="_blank" class="link_wrapper__anchor">
         Twitterから入部の申請をする！
         <generalSVGUse svgHref="./assets/img/icon_external_link.svg#icon_external_link" />
       </a>
@@ -24,10 +24,6 @@ import generalSVGUse from '@/components/parts/generalSVGUse.vue';
 <style lang="scss" scoped>
 .link_wrapper {
   margin-top: 50px;
-  @include mixin.mq('tab') {
-    width: 360px;
-    margin: 50px auto 0;
-  }
   @include mixin.mq('pc') {
     display: flex;
     align-items: center;
@@ -49,6 +45,7 @@ import generalSVGUse from '@/components/parts/generalSVGUse.vue';
   justify-content: center;
   padding: 30px 20px;
   font-weight: 700;
+  @include mixin.text();
   color: var(--color-white);
   background-color: var(--color-accent);
   transition: background-color 0.4s ease;
@@ -62,8 +59,8 @@ import generalSVGUse from '@/components/parts/generalSVGUse.vue';
   }
 }
 svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-left: 4px;
 }
 .link_wrapper__note {
