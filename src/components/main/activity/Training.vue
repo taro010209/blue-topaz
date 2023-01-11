@@ -1,7 +1,7 @@
 <script setup>
-import subHeading from '@/components/main/activity/parts/subHeading.vue'
-import Img from '@/components/main/activity/parts/trainingImg.vue'
-import Summary from '@/components/main/activity/parts/trainingSummary.vue'
+import subHeading from '@/components/main/activity/parts/subHeading.vue';
+import Img from '@/components/main/activity/parts/trainingImg.vue';
+import Summary from '@/components/main/activity/parts/trainingSummary.vue';
 </script>
 
 <template>
