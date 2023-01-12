@@ -27,7 +27,6 @@ onMounted(() => {
     });
     anime
       .timeline()
-      // .timeline({ loop: true })
       .add({
         targets: '.opening__lead:first-of-type .opening__lead_each',
         scale: [0.3, 1],
