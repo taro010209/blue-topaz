@@ -94,10 +94,10 @@ onMounted(() => {
   position: absolute;
 }
 .infographics_wrapper__graph_data--four {
-  fill: var(--color-accent);
+  fill: var(--color-main);
 }
 .infographics_wrapper__graph_data--first {
-  fill: var(--color-main);
+  fill: var(--color-accent);
 }
 .infographics_wrapper__graph_body path {
   fill: none;
