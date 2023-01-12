@@ -48,9 +48,6 @@ import Summary from '@/components/main/activity/parts/trainingSummary.vue';
 .training__heading {
   display: flex;
   align-items: center;
-  span:last-of-type {
-    margin-top: 0;
-  }
   @include mixin.mq('tab') {
     grid-area: heading;
     flex-direction: column;
