@@ -9,9 +9,9 @@
   <section class="about">
     <div class="about__container">
       <h2 id="about" class="about__heading">
-        <span>チアと</span>
-        <span>青春と</span>
-        <span>部員募集</span>
+        <span class="about__heading_text">チアと</span>
+        <span class="about__heading_text">青春と</span>
+        <span class="about__heading_text">部員募集</span>
       </h2>
       <p class="about__lead">
         Blue Topazは2018年に創部したチアダンス部です。<br /><br />
@@ -42,9 +42,9 @@
 .about__heading {
   @include mixin.text(30px, 1.6);
   color: var(--color-main);
-  span {
-    display: block;
-  }
+}
+.about__heading_text {
+  display: block;
 }
 .about__lead {
   @include mixin.text();
