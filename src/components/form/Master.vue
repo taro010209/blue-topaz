@@ -64,12 +64,6 @@ onMounted(() => {
       .add(
         {
           targets: '.firstview__heading',
-          // opacity: [0, 1],
-          // translateY: ['0.5em', 0],
-          // easing: 'easeOutExpo',
-          // duration: 600,
-          // offset: '-=600',
-          // duration: 1000,
           opacity: [0, 1],
           scale: [0.2, 1],
         },
