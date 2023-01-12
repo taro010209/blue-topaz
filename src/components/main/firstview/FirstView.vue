@@ -80,8 +80,6 @@ const images = [
   grid-area: content;
   width: 100%;
   height: 100vh;
-  // width: 324px;
-  // height: 576px;
   @include mixin.mq('tab') {
     width: 704px;
     height: 396px;
