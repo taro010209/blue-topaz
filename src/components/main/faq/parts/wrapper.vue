@@ -18,7 +18,7 @@ const setUpAccordion = () => {
       const summaryHeight = summary.offsetHeight;
 
       // 閉じる時の高さ = タイトル部分の高さ
-      element.style.setProperty('--details-close', `${summaryHeight}px`);
+      element.style.setProperty('--details-size-close', `${summaryHeight}px`);
 
       // オープン / クローズ 処理
       if (!element.open) {
@@ -26,7 +26,7 @@ const setUpAccordion = () => {
         element.open = true;
 
         // ※ コンテンツの高さはopenを付けたあとで取得しないと iOSで０になる
-        element.style.setProperty('--details-open', `${summaryHeight + content.offsetHeight}px`);
+        element.style.setProperty('--details-size-open', `${summaryHeight + content.offsetHeight}px`);
 
         // open付与から少しだけ遅らせた方が動作が安定する
         setTimeout(() => {
@@ -34,7 +34,7 @@ const setUpAccordion = () => {
         }, OFFSET_TIME);
       } else if (element.open) {
         // 初期状態で開いているアコーディオンもアニメーションするように、閉じるときにもセット
-        element.style.setProperty('--details-open', `${summaryHeight + content.offsetHeight}px`);
+        element.style.setProperty('--details-size-open', `${summaryHeight + content.offsetHeight}px`);
 
         setTimeout(() => {
           element.classList.remove('js_open'); // クラスを削除
@@ -74,7 +74,7 @@ onMounted(() => {
       <template #summary_heading>平日の活動日はどのように決めますか？</template>
       <template #answer_heading>メンバーが集まれる日に決めています！</template>
       <template #answer_detail>
-        日程調整ツールを使っています！<br />
+        毎週日程調整ツールを使って決定しています！<br />
         参加できなかった場合は次の活動日で補填します！
       </template>
     </Each>
@@ -125,7 +125,7 @@ onMounted(() => {
 .faq_wrapper {
   margin-top: 30px;
   @include mixin.mq('tab') {
-    width: 488px;
+    width: 74%;
     margin-top: 0;
   }
   @include mixin.mq('pc') {
