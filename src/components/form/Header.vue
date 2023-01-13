@@ -63,11 +63,6 @@ const headerShowControl = () => {
               header.style.top = '0';
             }
             viewportPosition = document.documentElement.scrollTop;
-
-            // 対Safari
-            // if (window.navigator.userAgent.toLowerCase().indexOf('safari') != -1 && window.pageYOffset <= 0) {
-            //   header.style.top = '0';
-            // }
           });
           ticking = true;
         }
