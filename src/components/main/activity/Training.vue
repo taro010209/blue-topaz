@@ -7,7 +7,7 @@ import Summary from '@/components/main/activity/parts/trainingSummary.vue';
 <template>
   <section class="training">
     <div class="training__container">
-      <subHeading thisTextEn="training" thisTextJa="練習" class="training__heading" />
+      <subHeading thisTextEn="training" thisTextJa="練習内容" class="training__heading" />
       <Img />
       <Summary />
     </div>
