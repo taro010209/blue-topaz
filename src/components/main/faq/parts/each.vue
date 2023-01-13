@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
 .faq_wrapper__each {
-  height: var(--details-close, auto);
+  height: var(--details-size-close, auto);
   background-color: var(--color-sub);
   transition: height 0.4s ease;
   overflow: hidden;
@@ -28,7 +28,7 @@
   }
 }
 .faq_wrapper__each.js_open {
-  height: var(--details-open, auto);
+  height: var(--details-size-open, auto);
 }
 .faq_wrapper__each.js_open .faq_wrapper__summary {
   color: var(--color-accent);
