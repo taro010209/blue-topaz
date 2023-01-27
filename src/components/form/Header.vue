@@ -50,26 +50,24 @@ const headerShowControl = () => {
   let viewportPosition = 0;
   let ticking = false;
 
-  setTimeout(() => {
-    window.addEventListener(
-      'scroll',
-      () => {
-        if (!ticking) {
-          requestAnimationFrame(() => {
-            ticking = false;
-            if (viewportPosition < document.documentElement.scrollTop) {
-              header.style.top = `-${headerHeight + 10}px`;
-            } else {
-              header.style.top = '0';
-            }
-            viewportPosition = document.documentElement.scrollTop;
-          });
-          ticking = true;
-        }
-      },
-      { passive: true }
-    );
-  }, 1000);
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          ticking = false;
+          if (viewportPosition < document.documentElement.scrollTop) {
+            header.style.top = `-${headerHeight + 10}px`;
+          } else {
+            header.style.top = '0';
+          }
+          viewportPosition = document.documentElement.scrollTop;
+        });
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
 };
 
 onMounted(() => {
