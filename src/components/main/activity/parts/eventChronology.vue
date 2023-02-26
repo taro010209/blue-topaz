@@ -60,8 +60,7 @@ const contents = [
     month: 'february',
     alt: 'USA予選大会に向けて練習するBlue Topaz',
     body: {
-      detail: `USA予選大会
-      （出場予定）`,
+      detail: `USA予選大会`,
     },
   },
 ];
