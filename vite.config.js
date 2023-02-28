@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
+import fs from 'fs-extra';
 import autoprefixer from 'autoprefixer';
 import postcssCombineDuplicatedSelectors from 'postcss-combine-duplicated-selectors';
 import postcssSortMediaQueries from 'postcss-sort-media-queries';
@@ -30,8 +31,8 @@ export default defineConfig({
         autoprefixer({
           cascade: false,
         }),
-        postcssCombineDuplicatedSelectors,
-        postcssSortMediaQueries,
+        postcssCombineDuplicatedSelectors({}),
+        postcssSortMediaQueries({}),
         cssDeclarationSorter({
           order: 'smacss',
         }),
@@ -39,7 +40,12 @@ export default defineConfig({
     },
   },
   build: {
-    root: './',
     outDir: '../dist',
   },
 });
+
+// secの画像ファル打をdistにコピー
+const srcDir = path.resolve(__dirname, 'src', 'assets', 'img');
+const destDir = path.resolve(__dirname, 'dist', 'assets', 'img');
+fs.ensureDirSync(destDir);
+fs.copySync(srcDir, destDir);
