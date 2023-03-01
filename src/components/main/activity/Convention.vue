@@ -12,7 +12,7 @@ import conventionEach from '@/components/main/activity/parts/conventionEach.vue'
       </div>
       <div class="convention_wrapper">
         <conventionEach summaryData="october 29" summaryName="ALL JAPAN CHEER DANCE CHAMPIONSHIP 2022 関東予選大会 Cheer Dance部門 大学生編成" />
-        <conventionEach summaryData="february 8" summaryName="ALL JAPAN CHEER DANCE CHAMPIONSHIP 2022 関東予選大会 Cheer Dance部門 大学生編成" />
+        <conventionEach summaryData="february 8" summaryName="USA Regionals 2023 東京大会 School&College Dance 大学編成 Pom部門 Small出場" />
       </div>
     </div>
   </section>
