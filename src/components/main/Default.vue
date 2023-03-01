@@ -1,4 +1,7 @@
 <script setup>
+import { onMounted } from 'vue';
+import anime from 'animejs';
+import observer from '@/components/parts/observer.js';
 import Master from '@/components/form/Master.vue';
 import Opening from '@/components/main/opening/Opening.vue';
 import FirstView from '@/components/main/firstview/FirstView.vue';
@@ -8,6 +11,82 @@ import Activity from '@/components/main/activity/Activity.vue';
 import Faq from '@/components/main/faq/Faq.vue';
 import Join from '@/components/main/join/Join.vue';
 import Gallery from '@/components/main/gallery/Gallery.vue';
+
+const openingAnimation = () => {
+  const textWrapper = document.querySelectorAll('.opening__lead');
+  textWrapper.forEach((element) => {
+    element.innerHTML = element.textContent.replace(/\S/g, "<span class='opening__lead_each'>$&</span>");
+  });
+  anime
+    .timeline()
+    .add({
+      targets: '.opening__lead:first-of-type .opening__lead_each',
+      scale: [0.3, 1],
+      opacity: [0, 1],
+      translateZ: 0,
+      easing: 'easeOutExpo',
+      duration: 600,
+      delay: (el, i) => 70 * (i + 1),
+    })
+    .add({
+      targets: '.opening__lead:last-of-type .opening__lead_each',
+      scale: [0.3, 1],
+      opacity: [0, 1],
+      translateZ: 0,
+      easing: 'easeOutExpo',
+      duration: 600,
+      delay: (el, i) => 70 * (i + 1),
+    })
+    .add({
+      targets: '.opening',
+      easing: 'easeInOutExpo',
+      translateY: [0, '-100vh'],
+      duration: 1100,
+    })
+    .add(
+      {
+        targets: '.firstview__img',
+        opacity: [0, 1],
+        easing: 'easeInOutCubic',
+        duration: 800,
+      },
+      '-=700'
+    )
+    .add(
+      {
+        targets: '.firstview__heading',
+        opacity: [0, 1],
+        scale: [0.2, 1],
+      },
+      '-=200'
+    )
+    .add(
+      {
+        targets: '.header',
+        easing: 'easeOutQuad',
+        translateY: ['-120', 0],
+        duration: 400,
+      },
+      '-=200'
+    );
+};
+const speechBubbleAnimeFunc = (entry) => {
+  anime({
+    targets: entry,
+    opacity: [0, 1],
+    scale: [0.2, 1],
+    rotate: '10deg',
+    duration: 1000,
+  });
+};
+const generalImgShowAnimeFunc = (entry) => {
+  entry.classList.add('js_show');
+};
+onMounted(() => {
+  openingAnimation();
+  observer.multipleObserver(speechBubbleAnimeFunc, '[data-anime="speechBubble"]');
+  observer.multipleObserver(generalImgShowAnimeFunc, '[data-anime="classAssignment"]');
+});
 </script>
 
 <template>
